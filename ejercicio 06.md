@@ -16,9 +16,9 @@ activate server
 server->>browser: main.css
 deactivate server
 
-browser->>server: HTTP GET http://studies.cs.helsinki.fi/exampleapp/spa.js
+browser->>server: HTTP GET http://studies.cs.helsinki.fi/exampleapp/ejercicio.js
 activate server
-server->>browser: spa.js
+server->>browser: ejercicio.js
 deactivate server
 
 browser->>server: HTTP GET http://studies.cs.helsinki.fi/exampleapp/data.json

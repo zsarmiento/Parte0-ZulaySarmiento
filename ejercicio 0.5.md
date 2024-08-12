@@ -25,3 +25,8 @@ browser->>server: HTTP GET http://studies.cs.helsinki.fi/exampleapp/data.json
 activate server
 server->>browser: [{"content":"date":"2024-08-08"},...]
 deactivate server
+
+browser->>server: HTTP GET http://studies.cs.helsinki.fi/exampleapp/data.json
+activate server
+server->>browser: [{"content":"date":"2024-08-08"},...]
+deactivate server
