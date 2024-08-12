@@ -5,7 +5,10 @@ participant browser
 participant server
 
 
-browser->>server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+browser->>server: HTTP GET https://fullstack-exampleapp.herokuapp.com/new_note
+activate server
+
+browser->>server: HTTP GET https://fullstack-exampleapp.herokuapp.com/new_note
 activate server
 
 server->>browser: HTTP 302
